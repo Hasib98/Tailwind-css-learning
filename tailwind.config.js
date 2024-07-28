@@ -5,5 +5,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  darkMode: "class"
+  darkMode: "media"  //'media' or 'class'
 }
