@@ -7,5 +7,5 @@ module.exports = {
     },
   },
   plugins: [],
-  darkMode: "media"  //'media' or 'class'
+  darkMode: "selector"  //'media' or 'class'
 }

@@ -587,10 +587,8 @@ h1{
   --tw-ring-offset-width: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .btn:focus {
-    border-color: transparent;
-  }
+.btn:focus:where(.dark, .dark *) {
+  border-color: transparent;
 }
 
 .btn {
@@ -619,11 +617,9 @@ h1{
   --tw-ring-color: rgb(147 51 234 / var(--tw-ring-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .btn-purple {
-    --tw-text-opacity: 1;
-    color: rgb(192 132 252 / var(--tw-text-opacity));
-  }
+.btn-purple:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 .btn-green {
@@ -648,11 +644,9 @@ h1{
   --tw-ring-color: rgb(22 163 74 / var(--tw-ring-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .btn-green {
-    --tw-text-opacity: 1;
-    color: rgb(74 222 128 / var(--tw-text-opacity));
-  }
+.btn-green:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
 .mx-auto {
@@ -839,37 +833,33 @@ h1{
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-gray-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
+.dark\:bg-gray-800:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
 
-  .dark\:bg-green-900\/10 {
-    background-color: rgb(20 83 45 / 0.1);
-  }
+.dark\:bg-green-900\/10:where(.dark, .dark *) {
+  background-color: rgb(20 83 45 / 0.1);
+}
 
-  .dark\:bg-purple-900\/10 {
-    background-color: rgb(88 28 135 / 0.1);
-  }
+.dark\:bg-purple-900\/10:where(.dark, .dark *) {
+  background-color: rgb(88 28 135 / 0.1);
+}
 
-  .dark\:text-gray-300 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
-  }
+.dark\:text-gray-300:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
 
-  .dark\:text-gray-400 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
+.dark\:text-gray-400:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
-  @media (prefers-color-scheme: dark) {
-    .sm\:dark\:hover\:bg-gray-700:hover {
-      --tw-bg-opacity: 1;
-      background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-    }
+  .sm\:dark\:hover\:bg-gray-700:hover:where(.dark, .dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   }
 }
 
